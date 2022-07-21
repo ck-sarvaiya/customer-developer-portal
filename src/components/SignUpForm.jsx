@@ -1,11 +1,19 @@
 import React from "react";
 import Select from "react-select";
 import { smallSelectStyle } from "../../src/assets/js/select-style";
-import { IconEye, IconEyeShow, IconLogo } from "../components/Common/Icons";
+import { IconEye, IconEyeShow, IconLogo } from "./Common/Icons";
 
 export const SignUpForm = () => {
   return (
     <div className="signup-wrapper bg-animation h-100 bg-gray-50">
+      <div className="d-flex align-items-center justify-content-end position-fixed right-0 mr-10 mt-10">
+        <div className="text-muted mr-10">Already have an account?</div>
+        <a href="/trackos/signup">
+          <button className="btn btn btn-outline-light bg-white">
+            Sign In
+          </button>
+        </a>
+      </div>
       <div className="row no-gutters d-flex min-vh-100 align-items-center">
         <div className="col-lg-3 col-xl-3"></div>
         <div className="col-lg-6 col-xl-6">
@@ -18,10 +26,10 @@ export const SignUpForm = () => {
                 </div>
               </div>
             </div>
-            <h3 className="text-center mb-50 w-100 d-block col-auto mb-30 mt-15 font-bold font-24">
+            <h3 className="text-center mb-50 w-100 d-block col-auto mb-20 mt-40 font-bold font-24">
               Become a PortPro Developer!
             </h3>
-            <div className="form-wrapper w-max p-50 bg-white rounded-10 shadow-5">
+            <div className="form-wrapper w-max p-50 bg-white rounded-10">
               <form className="form-sm">
                 <div className="form-group mb-20">
                   <label className="mb-10">

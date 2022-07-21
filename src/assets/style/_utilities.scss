@@ -4845,6 +4845,12 @@ a.text-purple:focus {
 .font-medium {
   font-weight: 500;
 }
+
+//Line Height
+.line-height-5 {
+  line-height: 5px !important;
+}
+
 //Font Sizes
 .font-10 {
   font-size: 10px !important;
@@ -4996,7 +5002,8 @@ a.text-purple:focus {
 
 // Animation
 .bg-animation {
-  background-image: url("../../assets/img/bg-signup.jpg");
+  background-image: url("../../assets/img/signup-backbg.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
