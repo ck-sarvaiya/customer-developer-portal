@@ -4,17 +4,25 @@ import { Link } from "react-router-dom";
 export const NavbarMenu = () => {
   return (
     <div className="subheader">
-      <ul
-        style={{ overflowX: "auto" }}
-        className="nav nav-tabs nav-tabs-custom flex-grow-1 overflow-x-auto text-nowrap flex-nowrap mr-2 bg-dark"
-        role="tablist"
-      >
-        <li className="nav-item" style={{ display: "inline-block" }}>
-          <Link to="" className="nav-link">
-            dasdffdsfg
-          </Link>
-        </li>
-      </ul>
+      <nav id="navbar-example2" class="navbar navbar-light bg-dark p-0">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">
+              First
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">
+              Second
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading3">
+              Second
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 };

@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="app">
       <Router>
-      <MainDashBoard />
+        <MainDashBoard />
       </Router>
     </div>
   );

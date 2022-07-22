@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Accordion } from "../Accordation/Accordation";
 
 export const SideBarLeft = () => {
+  const [selected, setSelected] = useState("INTRODUCTION");
+  useEffect(()=>{
+    console.log(selected,"selected")
+  })
   return (
     <aside className="left-sidebar p-10">
       <nav className="sidebar-nav">
@@ -22,6 +27,10 @@ export const SideBarLeft = () => {
           <i className="uil uil-map"></i>
           <span className="hide-menu">Tracking</span>
         </Link> */}
+
+        {/* <Accordion title={"INTRODUCTION"} childrens={["a", "b", "c"]} selected={selected} setSelected={setSelected} />
+        <Accordion title={"AUTHENTICATION"} childrens={["a", "b", "c"]} selected={selected} setSelected={setSelected} /> */}
+        selected
         <Link to="/home">Home</Link>
       </nav>
     </aside>
